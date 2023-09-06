@@ -26,11 +26,11 @@
     const minutes = dt.getMinutes()
     const hourneddle = document.querySelector("#hour")
     const minneddle = document.querySelector("#min")
-    const rotatehour = (hours-12)*30
-    const rotatemin =  (hours-12)*30
+    const rotatehour = (hours-12)*30 + minutes/2
+    const rotatemin =  (hours-12)*30 + minutes/2
     
     minneddle.style.transform = "rotate("+  minutes * 6 +"deg)"
-    
+
     if(min>12){
         minneddle.style.transform ="rotate(" + rotatehour +"deg)"
     }
