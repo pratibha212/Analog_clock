@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hourneddle{
+    height: 80px;
+    width: 10px;
+    background-color: black;
+    position: absolute;
+    top: 147px;
+    left: 220px;
+    
+}
+.minneddle{
+    height: 100px ;
+    width: 10px;
+    background-color: black;
+    position: absolute;
+    left: 230px;
+    top: 127px;
+    transform: rotate(8deg);
+}

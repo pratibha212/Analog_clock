@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="wrapper">
+        <div class="clock">
+            <img src="clockimg.jpg" alt="">
+            <div class="needle">
+            <div class="hourneddle" id="hour">
+
+            </div>
+            <div class="minneddle" id="min"></div>
+        </div>
+        </div>
+    </div>
+<script>
+   
+    const dt=new Date()
+    const hours = dt.getHours()
+    const minutes = dt.getMinutes()
+    const hourneddle = document.querySelector("#hour")
+    const minneddle = document.querySelector("#min")
+    const rotatehour = (hours-12)*30
+    const rotatemin =  (hours-12)*30
+    
+    minneddle.style.transform = "rotate("+  minutes * 6 +"deg)"
+    
+    if(min>12){
+        minneddle.style.transform ="rotate(" + rotatehour +"deg)"
+    }
+    else if(min<12){
+        minneddle .style.transform ="rotate(" + rotatemin +"deg)"
+    }
+   
+
+</script>
+/
+
+
+</body>
+</html>
